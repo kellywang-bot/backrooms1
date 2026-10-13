@@ -45,9 +45,7 @@ function extinguish(id){
 
 function extinguishID(id) {
     const flame = document.getElementById(id);
-    if (flame) {
-        flame.addEventListener("mouseenter", () => extinguish(id));
-    }
+    flame.addEventListener("mouseenter", () => extinguish(id));
 }
 
 extinguishID ("flame1");
