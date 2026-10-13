@@ -1,0 +1,190 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#walking-person {
+    position: fixed; /* absolute: free to move around but stuff inside it remains the same,
+                        while other elements replace its spot */
+    top: 50%; /* 50% of parent element*/
+    left: 50%;
+    transform: translate(-50%, -50%); /* centering */
+    z-index: 31; /* layering */
+    width: 200px;
+    height: auto;
+
+    /* overflow for vw */
+}
+
+@keyframes tunnel {
+  0%   {height: 0;}
+  25%  {height: 30vh;}
+  50%  {height: 70vh;}
+  100% {height: 100vh;}
+}
+
+#tunnel {
+    position:fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100vh;
+    width:100px;
+    background-color: white;
+    animation: tunnel 850ms linear;
+    z-index: 30;
+
+}
+
+
+
+
+
+
+.rooms {
+    position:relative;
+    width:100vw;
+}
+
+.walls {
+    position:relative;
+    height:30px;
+    width:100%;
+    background-color: #c5ba98;
+}
+
+#rat1{
+    position:absolute;
+    height:15%;
+    top:20%;
+    left:10%
+}
+
+#rat2{
+    position:absolute;
+    height:15%;
+    top:50%;
+    left:20%
+}
+
+#rat3{
+    position:absolute;
+    height:15%;
+    top:80%;
+    left:80%
+}
+
+#rat4{
+    position:absolute;
+    height:15%;
+    top:30%;
+    left:60%
+}
+
+#rat5{
+    position:absolute;
+    height:15%;
+    top:70%;
+    left:25%
+}
+
+
+
+#groundtunnel{
+    position: absolute;
+    width:80%;
+    height:100%;
+}
+
+
+#room{
+    height:100%;
+}
+
+#room-1-top{
+    height:10%;
+    background-image: url("images/grass.png");
+    background-size: 10vh;
+    background-repeat: repeat;
+    z-index: 1;
+}
+
+#room-1 {
+    height:10%;
+    background-image: url("images/dirt.png");
+    background-size: 10vh;
+    background-repeat: repeat;
+    z-index: 2;
+}
+
+#room-1-bottom{
+    height:80%;
+    background-image: url("images/dirtnograss.png");
+    background-size: 10vh;
+    background-repeat: repeat;
+    z-index: 3;
+}
+
+
+#room-2 {
+    height:100vh;
+    background-image: url("images/mantle.png");
+    background-size: 10vh;
+    background-repeat: repeat;
+}
+
+.fire{
+    position:relative;
+    height:10%;
+    top:15%;
+    left:10%;
+}
+
+#room-3 {
+    height:100vh;
+    background-image: url("images/coreinner.png");
+    background-size: 10vh;
+    background-repeat: repeat;
+}
+
+#core{
+    position: relative;
+    height: auto;
+    width: 50%;
+    top: 50%; /* 50% of parent element*/
+    left: 50%;
+    transform: translate(-50%, -50%); /* centering */
+}
+
+.dino{
+    position:absolute;
+    width: 20%;
+    height:auto;
+}
+
+#dino1{
+    top:100px;
+    right: 10px;
+}
+
+#dino2{
+    top:55%;
+    left: 10px;
+}
+
+#dino3{
+    top:5%;
+    left: 70px;
+}
+
+#dino4{
+    top:55%;
+    right: 60px;
+}
+
+
+
+
+
+    
