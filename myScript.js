@@ -12,11 +12,11 @@ const flames = [
 function randomFlame(id) {
     const flame = document.getElementById(id);
 
-    const maxX = window.innerWidth;
-    const maxY = window.innerHeight;
+    const X = window.innerWidth;
+    const Y = window.innerHeight;
 
-    const randomX = Math.floor(Math.random() *  maxX);
-    const randomY = Math.floor(Math.random() * maxY);
+    const randomX = Math.floor(Math.random() *  X);
+    const randomY = Math.floor(Math.random() * Y);
 
     flame.style.position = "absolute";
     flame.style.left = randomX + "px";
