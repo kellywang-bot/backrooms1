@@ -18,7 +18,7 @@ function randomFlame(id) {
     const randomX = Math.floor(Math.random() *  maxX);
     const randomY = Math.floor(Math.random() * maxY);
 
-    flame.style.position = "relative";
+    flame.style.position = "absolute";
     flame.style.left = randomX + "px";
     flame.style.top = randomY + "px";
 
